@@ -1,0 +1,12 @@
+{
+    "require": {
+        "elasticsearch/elasticsearch": "^7.5",
+        "mongodb/mongodb": "^1.5",
+        "fzaninotto/faker": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "src\\": ""
+        }
+    }
+}
