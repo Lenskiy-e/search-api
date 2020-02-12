@@ -3,11 +3,9 @@
 
 namespace services;
 
-require_once __DIR__ . '/../config/mongodb.php';
-require_once __DIR__ . '/../interfaces/DBInterface.php';
 
 use config\mongodb;
-use DBInterface;
+use interfaces\DBInterface;
 use MongoDB\BSON\ObjectId;
 
 class MongoService implements DBInterface

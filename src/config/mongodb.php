@@ -8,8 +8,6 @@ namespace config;
 
 use MongoDB\Client;
 
-require __DIR__ . '/../../vendor/autoload.php';
-
 class mongodb
 {
     /**

@@ -6,8 +6,6 @@
 
 namespace config;
 
-require __DIR__ . '/../../vendor/autoload.php';
-
 use Elasticsearch\ClientBuilder;
 use Elasticsearch\Client;
 

@@ -1,5 +1,7 @@
 <?php
 
+namespace interfaces;
+
 interface DBInterface {
     /**
      * DBInterface constructor.

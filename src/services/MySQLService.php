@@ -2,11 +2,8 @@
 
 namespace services;
 
-require __DIR__ . '/../config/db.php';
-require_once __DIR__ . '/../interfaces/DBInterface.php';
-
 use config\db;
-use DBInterface;
+use interfaces\DBInterface;
 use PDO;
 
 class MySQLService implements DBInterface

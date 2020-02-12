@@ -2,9 +2,6 @@
 
 namespace models;
 
-require_once __DIR__ . '/../services/MongoService.php';
-require_once __DIR__ . '/../services/MySQLService.php';
-
 use config\bootstrap;
 use Elasticsearch\Common\Exceptions\Missing404Exception;
 use services\MongoService;
@@ -26,7 +23,7 @@ class Article
         /*
          * Can be MongoService or MySQLService
          */
-        $this->app = $bootstrap->start(new MongoService());
+        $this->app = $bootstrap->start(new MySQLService());
     }
 
     /**

@@ -1,9 +1,11 @@
 <?php
+use models\Article;
+use config\bootstrap;
 
-require_once __DIR__ . '/models/Article.php';
-require_once __DIR__ . '/config/bootstrap.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-$article = new \models\Article( new \config\bootstrap() );
+
+$article = new Article( new bootstrap() );
 
 $response = [];
 

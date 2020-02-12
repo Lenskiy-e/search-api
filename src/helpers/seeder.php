@@ -1,18 +1,11 @@
 <?php
-
-
 namespace helpers;
 
-require_once __DIR__ . '/../config/bootstrap.php';
 require_once __DIR__ . '/../../vendor/autoload.php';
-require_once __DIR__ . '/../services/MySQLService.php';
-require_once __DIR__ . '/../services/MongoService.php';
-require_once __DIR__ . '/../models/Article.php';
 
 use config\bootstrap;
 use Faker\Factory;
 use models\Article;
-use services\MySQLService;
 
 class seeder
 {
@@ -37,7 +30,7 @@ class seeder
     {
         $faker = Factory::create();
 
-        for ($i = 0, $iMax = getenv('COUNT_SEEDS'); $i <= $iMax; $i++) {
+        for ($i = 0, $iMax = getenv('COUNT_SEEDS'); $i < $iMax; $i++) {
 
             $description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, id*1{$i} id*2{$i} id*3{$i} id*4{$i} quis nostrud exercitation ullamco laboris 

@@ -6,11 +6,8 @@
 
 namespace config;
 
-require 'elastic.php';
-require __DIR__ . '/../services/ElasticService.php';
-
 use services\ElasticService;
-use DBInterface;
+use interfaces\DBInterface;
 
 final class bootstrap
 {
